@@ -69,16 +69,18 @@
 ```bash
 ping [IP Ubuntu]
 ssh [user]@[IP Ubuntu]
+```
 
 
 ### 📌 Simulasi 2: Scan Port dari Kali (Nmap)
 ```bash
 nmap -sS -Pn [IP Ubuntu]
-
+```
 
 ### 📌 Simulasi 3: Cek Log SSH di Ubuntu
 ```bash
 sudo tail -f /var/log/auth.log
+```
 
 ---
 
@@ -92,11 +94,12 @@ Dari Kali Linux:
 
 ```bash
 hydra -l user -P /usr/share/wordlists/rockyou.txt ssh://[IP Ubuntu]
+```
 
 Cek log di Ubuntu:
 ```bash
 sudo tail -f /var/log/auth.log
-
+```
 
 🎯 Target:
 - Identifikasi log yang muncul saat brute force
