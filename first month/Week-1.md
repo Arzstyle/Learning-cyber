@@ -1,4 +1,4 @@
-# 📘 Week 2: Linux Lanjut, Virtualisasi, dan Lab Setup
+# 📘 Week 1: Linux Lanjut, Virtualisasi, dan Lab Setup
 
 ## 🎯 Tujuan Minggu Ini
 - Menguasai command line Linux (navigasi, scripting ringan, permission, user, logging)
