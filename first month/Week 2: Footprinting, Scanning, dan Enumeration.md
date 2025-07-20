@@ -1,4 +1,4 @@
-# 📘 MINGGU 3: Footprinting, Scanning, dan Enumeration
+# 📘 Week 2: Footprinting, Scanning, dan Enumeration
 
 ## 🎯 Tujuan Minggu Ini
 - Memahami tahapan awal serangan (Recon → Enumeration)
