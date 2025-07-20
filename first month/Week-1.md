@@ -109,23 +109,32 @@ sudo tail -f /var/log/auth.log
 ---
 
 ✅ Evaluasi Jawaban Soal Week 2
-🔹 1. "Permission -rw-r--r--"
+
+### 🔹 1. "Permission -rw-r--r--"
 ✅ Benar! Owner bisa baca & tulis, group hanya baca, others hanya baca.
-🔹 2. "Memberi akses eksekusi hanya ke owner"
+
+### 🔹 2. "Memberi akses eksekusi hanya ke owner"
 ✅ Benar secara konsep Tinggal implementasinya: chmod u+x file.sh
-🔹 3. "Perbedaan sudo dan su"
+
+### 🔹 3. "Perbedaan sudo dan su"
 ✅ Tepat! sudo: jalankan satu perintah sebagai root, su: masuk ke shell root penuh
-🔹 4. "10 log terakhir auth.log"
+
+### 🔹 4. "10 log terakhir auth.log"
 ⚠️ Hampir benar Kamu tulis tail -f, tapi "-f" untuk live follow. Untuk lihat 10 baris terakhir: tail /var/log/auth.log atau tail -n 10 /var/log/auth.log
-🔹 5. "chmod 777 artinya?"
+
+### 🔹 5. "chmod 777 artinya?"
 ✅ Tepat Itu full permission: read/write/execute untuk semua user (berbahaya kalau asal pakai 😬)
-🔹 6. "Ganti owner ke alice"
+
+### 🔹 6. "Ganti owner ke alice"
 ✅ Benar! chown alice file.txt
-🔹 7. "Scan port 22 tidak merespon, kenapa?"
+### 🔹 7. "Scan port 22 tidak merespon, kenapa?"
+
 ✅ Tepat Beberapa kemungkinan: Firewall aktif, SSH belum jalan, Sistem block ICMP (jadi hasil scan terkesan "tidak hidup")
-🔹 8. "Perbedaan nmap -sS -Pn vs -sT"
+
+### 🔹 8. "Perbedaan nmap -sS -Pn vs -sT"
 ✅ Jawaban kamu bagus -sS: Stealth Scan / SYN Scan (tidak buka koneksi penuh → susah dideteksi), -sT: Full TCP Connect Scan (mudah dideteksi), -Pn: Skip ping → langsung scan walaupun host tidak merespon ping
-🔹 9. "Deteksi brute force SSH"
+
+### 🔹 9. "Deteksi brute force SSH"
 ✅ Tepat dan realistik Melalui: tail -f /var/log/auth.log Kamu akan lihat: Failed password for invalid user root from 192.168.x.x
 
 
